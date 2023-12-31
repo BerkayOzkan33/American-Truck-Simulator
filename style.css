@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5DC;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Header*/
+header {
+    width: 100%;
+    height: 115px;
+    background-color: #004225;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header_content {
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header_title {
+    color: #FFB000;
+    font-family: 'Rubik Scribble', sans-serif;
+}
+
+.header_links ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.header_links ul li a {
+    text-decoration: none;
+    font-size: larger;
+    margin: 0 10px;
+    color: #F5F5DC;
+    transition: 0.4s;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+}
+
+.header_links ul li a:hover {
+    color: #FFB000;
+}
+
+/*Content*/
+
+.container {
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.container_box {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    flex-basis: calc(50% - 20px);
+    transition: 1.4s;
+}
+
+.container_box:hover {
+    scale: 1.05;
+}
+
+.container_box_title h2 {
+    color: #B70404;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.container_box_image {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #004225;
+
+}
+
+.container_box_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.container_truck {
+    width: 35%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+}
+
+.container_truck_image {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container_truck_buttons {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_truck_image img {
+    width: 90%;
+    height: 100%;
+}
+
+.container_truck_buttons button {
+    width: 100px;
+    height: 25px;
+    margin: 0 auto;
+}
+
+button {
+    border-radius: 10px;
+}
+
+.container_truck_content {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_truck_content_text {
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container_truck_content_text p {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    color: #191919;
+}
+
+.container2 {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 35px auto;
+}
+
+.container2_box {
+    width: 800px;
+    height: 550px;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container2_box_text p {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #191919;
+    margin: 2px auto;
+}
+
+.container2_box_image {
+    width: 100%;
+    height: 100%;
+}
+
+.container2_box_image img {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    width: 100px;
+    height: 10px;
+    transition: 0.4s;
+}
+
+.blue_button {
+    color: blue;
+}
+
+.red_button {
+    color: red;
+}
+
+.engine_button {
+    color: gray;
+}
+
+.blue_button:hover {
+    background-color: blue;
+    color: whitesmoke;
+}
+
+.red_button:hover {
+    background-color: red;
+    color: whitesmoke;
+}
+
+.engine_button:hover {
+    background-color: grey;
+    color: whitesmoke;
+}
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    height: 115px;
+    background-color: #004225;
+}
+
+.footer_content {
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px auto;
+}
+
+.footer_text h2 {
+    color: #FFB000;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+}
+
+.footer_links ul li {
+    display: inline-block;
+}
+
+.footer_links ul li a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #F5F5DC;
+
+}
+
+.footer_links ul li a img {
+    transition: 1.4s;
+}
+
+.footer_links ul li a img:hover {
+    scale: 1.2;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:1200px) {
+    .container_truck_content_text{
+        overflow: scroll;
+    }
+
+    .container_truck_content_text p {
+        font-size: 15px;
+    }
+
+    .container_truck_buttons button {
+        width: 80px;
+        height: auto;
+    }
+
+    
+}
+
+@media screen and (max-width:965px) {
+    .container_box {
+        flex-basis: calc(100% - 20px);
+    }
+
+    .header_title h1 {
+        font-size: 22px;
+    }
+
+    .header_links ul li a {
+        font-size: 15px;
+    }
+
+    .container_box_title h2{
+        font-size: 20px;
+    }
+
+    .container_truck_content_text{
+        overflow: scroll;
+    }
+
+    .container_truck_content_text p {
+        font-size: 13px;
+    }
+
+    .container_truck_buttons button {
+        width: 75px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:820px) {
+    .container2_box_text p {
+        font-size: 16px;
+    }
+
+    .container2_box{
+        width: 100%;
+    }
+
+    .container_truck_content_text{
+        overflow: scroll;
+    }
+
+    .container_truck_content_text p {
+        font-size: 12px;
+    }
+
+    .container_truck_buttons button {
+        width: 65px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:737px) {
+    .header_title h1 {
+        font-size: 20px;
+    }
+
+    .header_links ul li a {
+        font-size: 13px;
+    }
+
+    .container_box_title h2{
+        font-size: 18px;
+    }
+
+    .footer_text h2 {
+        font-size: 20px;
+    }
+
+    .footer_links ul li a img {
+        width: 35px;
+    }
+
+    .container2_box_text p {
+        font-size: 16px;
+    }
+
+    .container2_box{
+        width: 100%;
+    }
+
+    .container_truck_buttons button {
+        width: 55px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:665px) {
+    .header_title h1 {
+        font-size: 18px;
+    }
+
+    .header_links ul li a {
+        font-size: 11px;
+    }
+
+    .container_box_title h2{
+        font-size: 16px;
+    }
+
+    .footer_text h2 {
+        font-size: 18px;
+    }
+
+    .footer_links ul li a img {
+        width: 33px;
+    }
+
+    .container2_box_text p {
+        font-size: 14px;
+    }
+
+    .container2_box {
+        width: 100%;
+    }
+
+    .container_truck_buttons button {
+        width: 45px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:595px) {
+    .header_title h1 {
+        font-size: 16px;
+    }
+
+    .header_links ul li {
+        display: block;
+    }
+    .header_links ul li a {
+        font-size: 10px;
+        
+    }
+
+    .container_box_title h2{
+        font-size: 14px;
+    }
+
+    .footer_text h2 {
+        font-size: 16px;
+    }
+
+    .footer_links ul li a img {
+        width: 31px;
+    }
+
+    .container2_box_text p {
+        font-size: 13px;
+    }
+
+    .container2_box {
+        width: 100%;
+    }
+
+    .container_truck_buttons button {
+        width: 35px;
+        height: auto;
+    }
+
+    
+}
+
+@media screen and (max-width:464px) {
+    .header_title h1 {
+        font-size: 15px;
+    }
+
+    .header_links ul li {
+        display: block;
+    }
+    .header_links ul li a {
+        font-size: 9.5px;
+        
+    }
+
+    .container_box_title h2{
+        font-size: 13px;
+    }
+
+    .footer_text h2 {
+        font-size: 15px;
+    }
+
+    .footer_links ul li {
+        display: block;
+    }
+
+    .footer_links ul li a img {
+        width: 30px;
+    }
+
+    .container2_box_text p {
+        font-size: 12px;
+    }
+
+    .container2_box {
+        width: 100%;
+    }
+
+    .container_truck_buttons button {
+        width: 25px;
+        height: auto;
+    }
+}
